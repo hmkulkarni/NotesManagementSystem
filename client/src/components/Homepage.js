@@ -3,7 +3,7 @@ import '../css/homepage.css'
 
 const Homepage = () => {
     return (
-        <div className="container-fluid pt-3" className='main'>
+        <div className="container-fluid pt-3" className="main">
             <div className='bg'>
                 <div className='content'>
                 <h2>Welcome to Notes<span>Quest</span></h2>

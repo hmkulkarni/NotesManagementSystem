@@ -33,8 +33,6 @@ const Profile = () => {
   }
 
   function handleUploadFiles() {
-
-    
     setGetFiles(false);
   }
 
@@ -75,15 +73,15 @@ const Profile = () => {
       const resUser = await axios.get("/users/" + user._id);
       setUpdatedUser(resUser.data);
       // const sfiles = [];
-      // // console.log(starredIds);
+      // console.log(starredIds);
       // updatedUser["starredFiles"].map((async(id) => {
       //   const resStarredFile = await axios.get("/files/starred/" + id);
       //   sfiles.push(resStarredFile.data[0]);
       // }));
-      // // const resStarredFiles = await axios.get(
-      // //   "/files/starred/" + updatedUser["starredFiles"]
-      // // );
-      // // setStarredFiles(resStarredFiles.data);
+      // const resStarredFiles = await axios.get(
+      //   "/files/starred/" + updatedUser["starredFiles"]
+      // );
+      // setStarredFiles(resStarredFiles.data);
       // setStarredFiles(sfiles);
     };
     fetchStarredPostsandUser();
